@@ -3,83 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Barra Responsive + Layout</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
-
-    /* -------- BARRA DE NAVEGACIÓN -------- */
-    header {
-      background-color: black;
-      padding: 10px 20px;
-    }
-
-    .nav-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .icon {
-      width: 24px;
-      height: 24px;
-      filter: brightness(0) invert(1);
-    }
-
-    .nav-left {
-      display: flex;
-      align-items: center;
-    }
-
-    .nav-right {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-
-    @media (max-width: 600px) {
-      .nav-bar {
-        justify-content: space-evenly;
-      }
-
-      .nav-left, .nav-right {
-        display: contents;
-      }
-    }
-
-    /* -------- CONTENIDO PRINCIPAL -------- */
-    main {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 20px;
-      gap: 20px;
-    }
-
-    section {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 20px;
-    }
-
-    .seccion1, .seccion2 {
-      flex: 1 1 45%;
-      min-width: 250px;
-    }
-
-    .seccion3 {
-      flex: 1 1 100%;
-    }
-
-    @media (max-width: 600px) {
-      .seccion1, .seccion2, .seccion3 {
-        flex: 1 1 100%;
-      }
-    }
-  </style>
+  <title>CV</title>
+  <link rel="stylesheet" href="./css/estils.css" />
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -89,15 +15,14 @@
   <header>
     <div class="nav-bar">
       <div class="nav-left">
-        <a href="index2.html"><i class="fa-solid fa-earth-americas icon"></i></a>
+        <a href="index.html"><i class="fa-solid fa-earth-americas icon"></i></a>
        
       </div>
       <div class="nav-right">
         
-        <a href="index1.html"><i class="fa-solid fa-signs-post"></i></a>
-        <a href="index1.html"><i class="fa-solid fa-house"></i></a>
-        <a href="index3.html"><i class="fa-solid fa-passport"></i></a>
-        <a href="index4.html"><i class="fa-solid fa-language"></i></a>
+        <a href="./view/estudis.html"><i class="fa-solid fa-signs-post"></i></a>
+        <a href="./view/experiencia.html"><i class="fa-solid fa-passport"></i></a>
+        <a href="./view/en/index_en.html"><i class="fa-solid fa-language"></i></a>
       </div>
     </div>
   </header>
@@ -105,16 +30,27 @@
   <!-- CONTENIDO PRINCIPAL -->
   <main>
     <section class="seccion1">
-      <h2>Sección 1</h2>
-      <p>Contenido de la primera sección...</p>
+      <h2>QUIEN SOY YO?</h2>
+      <p>Soy Roberto, un joven de 18 años apasionado por la informática. Actualmente estudio esta disciplina con el objetivo de convertirme en un profesional en el mundo de la tecnología. Me interesa aprender sobre cómo usar la tecnología para resolver problemas reales. Me considero curioso, comprometido y con muchas ganas de seguir creciendo en este campo.</p>
     </section>
     <section class="seccion2">
-      <h2>Sección 2</h2>
-      <p>Contenido de la segunda sección...</p>
+      <h2>INFORMACIÓ PERSONAL:</h2>
+      <p>Fecha de nacimiento: 22/12/2006
+        <br>
+        Nacionalidad: Española
+        <br>
+        Idiomas: Español, Catalán, Inglés, Francés
+        <br>
+        Formación: Actualmente estoy estudiando un ciclo formativo de grado medio en informática.
+        <br>
+      </p>
     </section>
     <section class="seccion3">
-      <h2>Sección 3</h2>
-      <p>Contenido de la tercera sección...</p>
+      <h2>VIDEO:</h2>
+      <div class="container"> 
+
+      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/S2iQyoHjgJU" title="castellano video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     </section>
   </main>
 
